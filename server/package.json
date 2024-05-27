@@ -1,0 +1,31 @@
+{
+  "name": "live-chat-server",
+  "packageManager": "yarn@1.22.22",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "node dist/main.js --watch"
+  },
+  "dependencies": {
+    "@fastify/websocket": "^10.0.1",
+    "fastify": "^4.27.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.12.12",
+    "@types/uuid": "^9.0.8",
+    "@types/ws": "^8.5.10",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "typescript": "~5.4.0",
+    "typescript-eslint": "^7.10.0"
+  }
+}
